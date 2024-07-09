@@ -5,11 +5,11 @@ import java.util.Objects;
 public class Card {
 
     private String cardNumber;
-    private int pin;
+    private String pin;
 
     private double balance;
 
-    public Card(String cardNumber, int pin, double balance) {
+    public Card(String cardNumber, String pin, double balance) {
         this.cardNumber = cardNumber;
         this.pin = pin;
         this.balance = balance;
@@ -19,7 +19,7 @@ public class Card {
         return cardNumber;
     }
 
-    public int getPin() {
+    public String getPin() {
         return pin;
     }
 

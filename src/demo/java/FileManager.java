@@ -19,7 +19,7 @@ public class FileManager {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(" ");
-                Card card = new Card(data[0], Integer.parseInt(data[1]), Double.parseDouble(data[2]));
+                Card card = new Card(data[0], data[1], Double.parseDouble(data[2]));
                 cards.add(card);
             }
         } catch (IOException e) {

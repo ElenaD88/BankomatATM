@@ -10,10 +10,10 @@ public class ATM {
         this.cards = cards;
     }
 
-    public Card authenticate(String cardNumber, int pin) {
+    public Card authenticate(String cardNumber, String pin) {
         // Метод для авторизации
         for(Card card : cards){
-            if(card.getCardNumber().equals(cardNumber) && card.getPin() == pin){
+            if(card.getCardNumber().equals(cardNumber) && card.getPin().equals(pin)){
                 return card;
             }
         }
