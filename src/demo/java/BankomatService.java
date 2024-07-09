@@ -17,7 +17,6 @@ public class BankomatService {
             String cardNumber = scanner.nextLine();
             System.out.print("Введите ПИН-код: ");
             String pin = scanner.nextLine();
-//            scanner.nextLine(); // Считываем символ новой строки после ввода ПИН-кода
 
             if (checkNumber(cardNumber) && checkPinCode(pin) && atm.authenticate(cardNumber, pin) != null) {
                 showMenu();
@@ -47,8 +46,6 @@ public class BankomatService {
                 System.out.println("Неверный номер карты или ПИН-код.");
             }
         }
-
-        // Логика работы банкомата: авторизация, выбор действий и т.д.
     }
 
     private static void showMenu() {
